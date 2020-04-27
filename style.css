@@ -8,7 +8,7 @@ body {
     background: #e0e0e0;
     color: #212121;
     background-color: #DFDBE5;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23e82121' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23e82121' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
 }
@@ -46,6 +46,8 @@ ul {
     padding: 10px;
 }
 
+
+
 .nav-main ul li a:hover {
     border-bottom: 2px solid #212121;
 }
@@ -71,7 +73,8 @@ hr {
     width: 100%;
     height: 550px;
     background: url('./img/showcase2.jpg') no-repeat center center/cover;
-    padding-bottom: 50px;
+    padding: 50px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,13 +112,172 @@ hr {
 .showcase p {
     margin-bottom: 10px;
 }
+/*news card*/
+
+.news-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+
+}
+
+.news-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-card a {
+    padding: 10px 0;
+    color: #212121;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news-card a:hover{
+    text-decoration: underline;
+}
+
+/*cards banner one*/
+
+.cards-banner-one {
+    width: 100%;
+    height: 350px;
+    background: url('./img/tech-red.jpg');
+    margin-bottom: 40px;
+
+}
+
+.cards-banner-one h2,
+.cards-banner-one p {
+    color: #DFDBE5;
+    margin: 10px 0 20px 0;
+}
+
+.cards-banner-one .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #ffffff;
+}
+
+/*cards banner two*/
+
+.cards-banner-two{
+    width: 100%;
+    height: 350px;
+    background: url('./img/image-five.jpg') no-repeat center center/cover;
+
+}
+
+.cards-banner-two .content {
+    width: 50%;
+    padding: 100px 0 0 30px;
+    color: #ffffff;
+}
+
+.cards-banner-two h2,
+.cards-banner-two p {
+    color: #DFDBE5;
+    margin: 10px 0 20px 0;
+}
+
+/*Social*/
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
 
 
 
+/*footer links*/
+
+.footer-links{
+    background: #2f3640;
+    color: #e0e0e0;
+    font-size: 12px;
+    padding: 35px 0;
+
+}
+
+.footer-links h3,
+.footer-links a{
+    color: #e0e0e0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul li {
+    line-height: 2.8;
+}
+
+.footer {
+    background: #2f2f2f;
+    color: #616161;
+    font-size: 12 px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 
+@media (max-width: 700px) {
+.nav-main ul.nav-menu{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #DFDBE5;
+    height: 100%;
+    transform: translatex(-20px);
+    padding:30px;
+    opacity: .9;
+}
 
+.nav-main ul.nav-menu li {
+    padding: 20px;
+    font-size: 14px;
+}
+ .news-card {
+     grid-template-columns: repeat(2, 1fr);
+ }
+ .cards-banner-one .content,
+ .cards-banner-two .content {
+    width: 80%;
+ }
 
+ 
+}
 
 
 
